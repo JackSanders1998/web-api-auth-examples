@@ -40,17 +40,17 @@ class App extends Component {
         });
       })
   }
-  getCurrentUserProfile(){
-    spotifyApi.getMyCurrentPlaybackState()
-      .then((response) => {
-        this.setState({
-          nowPlaying: { 
-              name: response.item.name, 
-              albumArt: response.item.album.images[0].url
-            }
-        });
-      })
-  }
+  // getCurrentUserProfile(){
+  //   spotifyApi.getMyCurrentPlaybackState()
+  //     .then((response) => {
+  //       this.setState({
+  //         nowPlaying: { 
+  //             name: response.item.name, 
+  //             albumArt: response.item.album.images[0].url
+  //           }
+  //       });
+  //     })
+  // }
   render() {
     return (
       <div className="App">
